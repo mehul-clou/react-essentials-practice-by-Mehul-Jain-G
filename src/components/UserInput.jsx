@@ -6,16 +6,18 @@ export default function UserInput({ userInput, onChangeClick }) {
           <label>Initial Investment</label>
           <input
             type="number"
+            name="initialInvestment"
             value={userInput.initialInvestment}
-            onChange={(e) => onChangeClick("initialInvestment", e.target.value)}
+            onChange={onChangeClick}
           />
         </p>
         <p>
           <label>Annual Investment</label>
           <input
             type="number"
+            name="annualInvestment"
             value={userInput.annualInvestment}
-            onChange={(e) => onChangeClick("annualInvestment", e.target.value)}
+            onChange={onChangeClick}
           />
         </p>
       </div>
@@ -24,18 +26,18 @@ export default function UserInput({ userInput, onChangeClick }) {
           <label>Expected Return</label>
           <input
             type="number"
-            value={userInput.expectedInvestment}
-            onChange={(e) =>
-              onChangeClick("expectedInvestment", e.target.value)
-            }
+            name="expectedReturn"
+            value={userInput.expectedReturn}
+            onChange={onChangeClick}
           />
         </p>
         <p>
           <label>Duration</label>
           <input
             type="number"
+            name="duration"
             value={userInput.duration}
-            onChange={(e) => onChangeClick("duration", e.target.value)}
+            onChange={onChangeClick}
           />
         </p>
       </div>
